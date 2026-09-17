@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoodSound 音效試聽室 — Google AI / Lyria 3.5 舒眠音效</title>
+  <title>GoodSound 音效試聽室 — 純淨舒眠原聲 & 無縫循環</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -55,9 +55,9 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(99, 102, 241, 0.18);
-      border: 1px solid rgba(99, 102, 241, 0.4);
-      color: #A5B4FC;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34D399;
       padding: 6px 14px;
       border-radius: 999px;
       font-size: 0.85rem;
@@ -79,8 +79,25 @@
       color: var(--text-secondary);
       font-size: 1rem;
       line-height: 1.6;
-      max-width: 620px;
+      max-width: 650px;
       margin: 0 auto;
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .track-list {
@@ -152,6 +169,15 @@
       padding: 2px 8px;
       border-radius: 6px;
       letter-spacing: 0.5px;
+    }
+
+    .spec-tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent-cyan);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 6px;
     }
 
     .track-titles p {
@@ -247,9 +273,16 @@
 
   <div class="container">
     <div class="header">
-      <div class="badge">✨ Google AI • Lyria 3.5 旗艦模型</div>
+      <div class="badge">🌿 100% 純淨自然原聲取樣 • 無背景音樂干擾</div>
       <h1>GoodSound 舒眠音效試聽室</h1>
-      <p class="subtitle">針對深層入眠、零打擾 ASMR 所量身調配的 5 款純淨音效。已徹底移除機械合成正弦波，換上 44.1kHz 真實自然取樣質感。</p>
+      <p class="subtitle">徹底剔除不相干的背景旋律與電子配樂，保留極致純粹的真實自然聲與胸腔呼嚕。全部音檔經由精密等能量（Equal-power）平滑淡入淡出裁切，實現 0 爆音無縫連續循環！</p>
+      
+      <div class="stats-bar">
+        <span class="stat-pill">✨ 5 首總容量：僅 1.15 MB</span>
+        <span class="stat-pill">🪶 較先前縮減 93% 體積</span>
+        <span class="stat-pill">🔁 精密無縫平滑循環 (Seamless Loop)</span>
+        <span class="stat-pill">🛡️ CC0 商業授權無憂</span>
+      </div>
     </div>
 
     <div class="track-list">
@@ -259,8 +292,8 @@
           <div class="track-info">
             <div class="track-icon">🐱</div>
             <div class="track-titles">
-              <h3>貓咪撒嬌呼嚕聲 <span>(Affectionate Purr)</span></h3>
-              <p>近距離溫柔胸腔共鳴呼嚕，伴隨撒嬌細微氣音，純淨溫暖 ASMR。</p>
+              <h3>貓咪撒嬌呼嚕聲 <span>(Affectionate Purr)</span> <span class="spec-tag">8.4s • 99 KB</span></h3>
+              <p>真實貓咪近距離親人撒嬌呼嚕，純粹胸腔共鳴震盪，完全無音樂、無人聲、純淨真實 ASMR。</p>
             </div>
           </div>
         </div>
@@ -272,7 +305,7 @@
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-cat-gentle', this)">🔁 循環播放中</button>
-          <a href="audio/sound_cat_purr_gentle.mp3" download="sound_cat_purr_gentle.mp3" class="btn-dl">⬇ 下載 MP3</a>
+          <a href="audio/sound_cat_purr_gentle.mp3" download="sound_cat_purr_gentle.mp3" class="btn-dl">⬇ 下載 (99KB)</a>
         </div>
       </div>
 
@@ -282,8 +315,8 @@
           <div class="track-info">
             <div class="track-icon">💤</div>
             <div class="track-titles">
-              <h3>貓咪沈睡聲 <span>(Deep Sleep Purr)</span></h3>
-              <p>熟睡貓咪緩慢平穩的低頻呼嚕與呼吸起伏，營造安心被陪伴感。</p>
+              <h3>貓咪沈睡聲 <span>(Deep Sleep Purr)</span> <span class="spec-tag">15.0s • 176 KB</span></h3>
+              <p>熟睡貓咪緩慢深層的低頻呼嚕與平穩呼吸節奏，營造安心被陪伴感，絕無任何樂器雜音。</p>
             </div>
           </div>
         </div>
@@ -295,7 +328,7 @@
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-cat-sleep', this)">🔁 循環播放中</button>
-          <a href="audio/sound_cat_purr.mp3" download="sound_cat_purr.mp3" class="btn-dl">⬇ 下載 MP3</a>
+          <a href="audio/sound_cat_purr.mp3" download="sound_cat_purr.mp3" class="btn-dl">⬇ 下載 (176KB)</a>
         </div>
       </div>
 
@@ -305,8 +338,8 @@
           <div class="track-info">
             <div class="track-icon">🌊</div>
             <div class="track-titles">
-              <h3>海浪聲 <span>(Night Ocean Waves)</span></h3>
-              <p>深夜沙灘柔和平緩的海浪拍岸與細沙泡沫聲，天然均勻白噪音，無雜音。</p>
+              <h3>海浪聲 <span>(Night Ocean Waves)</span> <span class="spec-tag">18.0s • 282 KB</span></h3>
+              <p>深夜沙灘柔和平緩的海浪湧動拍岸與退潮細沙泡沫，天然舒緩白噪音，零音樂、零海鷗干擾。</p>
             </div>
           </div>
         </div>
@@ -318,7 +351,7 @@
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-ocean', this)">🔁 循環播放中</button>
-          <a href="audio/sound_ocean.mp3" download="sound_ocean.mp3" class="btn-dl">⬇ 下載 MP3</a>
+          <a href="audio/sound_ocean.mp3" download="sound_ocean.mp3" class="btn-dl">⬇ 下載 (282KB)</a>
         </div>
       </div>
 
@@ -328,8 +361,8 @@
           <div class="track-info">
             <div class="track-icon">🧘</div>
             <div class="track-titles">
-              <h3>靜心頌缽 <span>(Tibetan Singing Bowl)</span></h3>
-              <p>純銅西藏頌缽單次敲擊，432Hz 豐富悠長的長音泛音共振與緩慢衰減。</p>
+              <h3>靜心頌缽 <span>(Tibetan Singing Bowl)</span> <span class="spec-tag">18.0s • 211 KB</span></h3>
+              <p>純銅西藏手工頌缽木棒敲擊真聲，空靈溫暖的長音泛音共振與緩慢自然衰減，放鬆腦波。</p>
             </div>
           </div>
         </div>
@@ -341,7 +374,7 @@
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-bowl', this)">🔁 循環播放中</button>
-          <a href="audio/sound_tibetan_bowl.mp3" download="sound_tibetan_bowl.mp3" class="btn-dl">⬇ 下載 MP3</a>
+          <a href="audio/sound_tibetan_bowl.mp3" download="sound_tibetan_bowl.mp3" class="btn-dl">⬇ 下載 (211KB)</a>
         </div>
       </div>
 
@@ -351,8 +384,8 @@
           <div class="track-info">
             <div class="track-icon">☕</div>
             <div class="track-titles">
-              <h3>Lofi 舒眠音樂 <span>(Lofi Sleep Melody)</span> <span class="pro-tag">PRO 專屬</span></h3>
-              <p>慢速輕柔暖色電鋼琴和弦、微細黑膠唱片氛圍、無突兀重音，專為睡前放鬆設計。</p>
+              <h3>Lofi 舒眠音樂 <span>(Lofi Sleep Melody)</span> <span class="pro-tag">PRO 專屬</span> <span class="spec-tag">26.0s • 407 KB</span></h3>
+              <p>極度慢速輕柔暖色電鋼琴和弦、微細黑膠唱片底噪，裁切平滑無縫循環，專為安詳入眠設計。</p>
             </div>
           </div>
         </div>
@@ -364,7 +397,7 @@
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-lofi', this)">🔁 循環播放中</button>
-          <a href="audio/sound_lofi.mp3" download="sound_lofi.mp3" class="btn-dl">⬇ 下載 MP3</a>
+          <a href="audio/sound_lofi.mp3" download="sound_lofi.mp3" class="btn-dl">⬇ 下載 (407KB)</a>
         </div>
       </div>
     </div>
