@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Snoozy (舒眠聲) | Zero-Tracking White Noise & Sleep Acoustics</title>
+  <meta name="description" content="Privacy Policy for Snoozy (舒眠聲) - 100% offline audio DSP, zero personal data collection, zero tracking, non-custodial Web3 support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal-container {
+      max-width: 880px;
+      margin: 120px auto 80px;
+      padding: 0 24px;
+    }
+    .legal-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .legal-card h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #00FFA3, #03E1FF, #DC1FFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .legal-meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .legal-card h2 {
+      font-size: 1.35rem;
+      margin: 32px 0 14px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legal-card p, .legal-card li {
+      color: var(--text-secondary);
+      font-size: 1.02rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .legal-card ul {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+    .highlight-box {
+      background: rgba(0, 255, 163, 0.08);
+      border-left: 4px solid #00FFA3;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+    .highlight-box strong {
+      color: #00FFA3;
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+    .back-nav:hover {
+      transform: translateX(-4px);
+      color: #00FFA3;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <nav class="navbar" style="position: fixed; width: 100%; top: 0; z-index: 100;">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌙</span>
+        <span class="brand-text">Snoozy <span class="brand-sub">/ 舒眠聲</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="privacy.html" class="nav-item active">Privacy Policy</a>
+        <a href="terms.html" class="nav-item">Terms of Service</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal-container">
+    <a href="index.html" class="back-nav">← Back to Snoozy Home</a>
+    
+    <article class="legal-card">
+      <h1>Privacy Policy</h1>
+      <div class="legal-meta">
+        <span>Effective Date: September 21, 2026</span> • <span>Last Updated: September 2026</span> • <span>Version: 1.0.6</span>
+      </div>
+
+      <div class="highlight-box">
+        <strong>🔒 Core Privacy Commitment:</strong> Snoozy is built upon a strict privacy-by-design architecture. We believe relaxation and sleep health should be private. Snoozy operates 100% locally on your device: no account registration, no background tracking, no microphones, and zero personal data collection.
+      </div>
+
+      <h2>1. Information We Do NOT Collect</h2>
+      <p>Snoozy adheres to the highest data protection standards (including GDPR, CCPA, and Solana Mobile dApp Store Guidelines):</p>
+      <ul>
+        <li><strong>No Personal Data:</strong> We do not ask for, collect, store, or transmit your name, email address, phone number, physical location, or device identifiers.</li>
+        <li><strong>No Audio Recording or Microphone Access:</strong> Snoozy is an acoustic synthesis and playback engine only. The app does not request or possess microphone permissions (`android.permission.RECORD_AUDIO`). It cannot and will not record your ambient audio or voice.</li>
+        <li><strong>No Analytics or Behavioral Trackers:</strong> We do not embed invasive third-party telemetry, advertising SDKs (in the Solana edition), or analytics trackers (e.g., Firebase Analytics, Adjust, AppsFlyer).</li>
+      </ul>
+
+      <h2>2. On-Device Storage & Permissions</h2>
+      <p>All app settings, sound volume levels, selected natural sound presets, and sleep timer configurations are stored exclusively on your local device using Android SharedPreferences:</p>
+      <ul>
+        <li><strong>Foreground Media Service (`android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK`):</strong> Used strictly to ensure audio continues playing smoothly while your screen is turned off or when you use other apps.</li>
+        <li><strong>Wake Lock (`android.permission.WAKE_LOCK`):</strong> Used only during active sleep playback to prevent the Android OS from abruptly terminating the background audio engine.</li>
+        <li><strong>Post Notifications (`android.permission.POST_NOTIFICATIONS`):</strong> Used on Android 13+ solely to render the standard lock-screen media player notification (Play, Pause, Stop).</li>
+      </ul>
+
+      <h2>3. Web3 & Voluntary Support (Solana Edition)</h2>
+      <p>In the Solana Mobile dApp Store edition, users may choose to support continuous development through voluntary tips:</p>
+      <ul>
+        <li><strong>Non-Custodial Architecture:</strong> Snoozy does not hold, manage, or have access to your private keys or seed phrases. Any donation interaction utilizes standard Solana Pay URIs (`solana:...`) or Mobile Wallet Adapter (MWA) protocol, handled entirely by your trusted device wallet (e.g., Solana Seeker Seed Vault or Phantom).</li>
+        <li><strong>Public Blockchain Data:</strong> If you perform a blockchain donation, the transaction is publicly recorded on the decentralized Solana ledger as inherent to blockchain technology. Snoozy itself maintains no database associating your identity with wallet transactions.</li>
+        <li><strong>Optional Coffee Tipping:</strong> For non-crypto voluntary support via Ko-fi or PayPal, donations are processed externally on respective secure platforms. Snoozy receives no payment details or card numbers.</li>
+      </ul>
+
+      <h2>4. Children's Privacy (COPPA Compliance)</h2>
+      <p>Snoozy is an offline ambient white noise tool suitable for all ages, including babies, children, and parents. Because we do not collect any personal information whatsoever, Snoozy is fully compliant with the Children’s Online Privacy Protection Act (COPPA) and international standards.</p>
+
+      <h2>5. Security of Your Data</h2>
+      <p>Because your sound preferences and timer states never leave your physical device, your information is protected by your device's built-in sandbox security and hardware encryption.</p>
+
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>We may periodically update our Privacy Policy to reflect app updates or regulatory changes. Any modifications will be posted to this page with an updated effective date.</p>
+
+      <h2>7. Contact Information</h2>
+      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or app security, please contact the developer directly:</p>
+      <p>
+        <strong>Developer:</strong> Aiohlala Mobile Studio<br />
+        <strong>Support Email:</strong> <a href="mailto:aiohlala.apps@gmail.com" style="color: var(--accent-cyan);">aiohlala.apps@gmail.com</a><br />
+        <strong>Website:</strong> <a href="https://aiohlala.github.io/goodsound-site/" style="color: var(--accent-cyan);">https://aiohlala.github.io/goodsound-site/</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer" style="text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 0.88rem; border-top: 1px solid var(--border-color);">
+    <p>© 2026 Snoozy (舒眠聲) by Aiohlala. All rights reserved. • <a href="privacy.html" style="color: var(--text-secondary);">Privacy</a> • <a href="terms.html" style="color: var(--text-secondary);">Terms</a></p>
+  </footer>
+</body>
+</html>
