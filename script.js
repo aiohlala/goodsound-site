@@ -99,7 +99,7 @@ const translations = {
     p5Head: "5. Children's Privacy (COPPA Compliance)",
     p5Desc: "Snoozy does not target children under the age of 13 and does not collect any personal data from children or adults alike.",
     p6Head: "6. Contact & Inquiries",
-    p6Desc: "If you have any questions regarding this Privacy Policy or app security, please contact the developer via email at aiohlala.apps@gmail.com or via our official GitHub repository.",
+    p6Desc: "If you have any questions regarding this Privacy Policy or app security, please contact the developer via email at aiohlala69@gmail.com or via our official GitHub repository.",
     footerDesc: "Procedural audio soundscapes for deep sleep, meditation, and high-performance focus."
   },
   zh: {
@@ -200,7 +200,7 @@ const translations = {
     p5Head: "5. 兒童隱私保護 (COPPA 合規)",
     p5Desc: "Snoozy 不針對 13 歲以下兒童收集任何資料，全年齡層皆可安心使用。",
     p6Head: "6. 聯絡與支援管道",
-    p6Desc: "若您對本隱私政策有任何疑問，歡迎隨時透過電子郵件 aiohlala.apps@gmail.com 或前往 GitHub 官方專案與開發者聯繫。",
+    p6Desc: "若您對本隱私政策有任何疑問，歡迎隨時透過電子郵件 aiohlala69@gmail.com 或前往 GitHub 官方專案與開發者聯繫。",
     footerDesc: "專為深層睡眠、冥想與高效專注打造的程序化聲學環境。"
   }
 };
