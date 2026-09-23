@@ -202,17 +202,132 @@ const translations = {
     p6Head: "6. 聯絡與支援管道",
     p6Desc: "若您對本隱私政策有任何疑問，歡迎隨時透過電子郵件 aiohlala69@gmail.com 或前往 GitHub 官方專案與開發者聯繫。",
     footerDesc: "專為深層睡眠、冥想與高效專注打造的程序化聲學環境。"
+  },
+  th: {
+    brandSub: "เสียงช่วยนอนหลับและผ่อนคลาย",
+    navFeatures: "ฟีเจอร์เด่น",
+    navPresets: "ชุดเสียงแนะนำ",
+    navPreview: "🎵 ทดลองฟังเสียง AI",
+    navScreenshots: "ภาพตัวอย่างแอป",
+    navDownload: "ดาวน์โหลด",
+    navPrivacy: "นโยบายความเป็นส่วนตัว",
+    navGetApp: "รับแอป",
+    heroPill: "✨ สังเคราะห์เสียงอัลกอริทึมไร้ที่สิ้นสุด • ออฟไลน์ DSP 100%",
+    heroTitle: "หลับลึกสนิท <br><span class=\"gradient-text\">ผ่อนคลายอย่างเป็นธรรมชาติ</span>",
+    heroDesc: "Snoozy สร้างสภาพแวดล้อมเสียงที่ออกแบบมาเพื่อคุณโดยเฉพาะ ด้วยการสังเคราะห์เสียงตามเวลาจริง ผสมผสานไวท์นอยส์ พิงก์นอยส์ บราวน์นอยส์บริสุทธิ์ เข้ากับเสียงฝนตก กองไฟ คลื่นทะเล และภาพ Lofi อบอุ่น เพื่อการนอนหลับลึกและการมีสมาธิอย่างไร้เสียงรบกวน",
+    heroDownloadBtn: "ดาวน์โหลด APK (v1.0.6)",
+    heroLearnMore: "สำรวจฟีเจอร์",
+    heroExploreBtn: "สำรวจฟีเจอร์",
+    badgeSolana: "ประมวลผล DSP ออฟไลน์ 100%",
+    badgePrivacy: "ความเป็นส่วนตัว 100% • ไร้การติดตาม",
+    badgeBattery: "ประหยัดพลังงานแบตเตอรี่สูงสุด",
+    floatDpsTitle: "กระบวนการ DSP ขั้นสูง",
+    floatDpsSub: "ไร้รอยต่อเสียงวนซ้ำ",
+    floatTimerTitle: "ค่อยๆ หรี่เสียงลงอย่างนุ่มนวล",
+    floatTimerSub: "หรี่เสียงอย่างราบรื่น 30 วินาที",
+    floatZenTitle: "นาฬิกาเซนหัวเตียง",
+    floatZenSub: "หรี่แสงอัตโนมัติใน 5 วินาที",
+    featTag: "วิศวกรรมเสียงเพื่อการพักผ่อน",
+    featTitle: "ออกแบบมาเพื่อความเงียบสงบและการนอนหลับที่ต่อเนื่อง",
+    featSubtitle: "ทุกคลื่นความถี่ถูกคำนวณแบบเรียลไทม์บนหน่วยประมวลผลเสียงของอุปกรณ์ เพื่อขจัดเสียงวนลูปซ้ำซากและความเมื่อยล้าของการได้ยิน",
+    feat1Title: "การสังเคราะห์เสียงด้วยอัลกอริทึม",
+    feat1Desc: "สร้างไวท์นอยส์ พิงก์นอยส์ และบราวน์นอยส์ด้วยอัลกอริทึมสด ไม่มีรอยต่อเสียงหรือเสียงกระตุกสะดุด มอบการกลบเสียงรบกวนภายนอกและเสียงวิ้งในหูได้อย่างเป็นธรรมชาติ",
+    feat2Title: "มิกเซอร์ผสมเสียงหลายแทร็ก",
+    feat2Desc: "ผสมผสานเสียงธรรมชาติหลากหลายพร้อมกัน ปรับความหนักเบาของสายฝน เสียงฟ้าร้อง ลำธาร นกร้องในป่า กระดิ่งลม และกองไฟด้วยแถบเลื่อนอิสระ",
+    feat3Title: "ตัวตั้งเวลาปิดพร้อมระบบหรี่เสียงนุ่มนวล",
+    feat3Desc: "ตั้งเวลาได้ตั้งแต่ 15 นาทีถึง 8 ชั่วโมง ในช่วง 30 วินาทีสุดท้าย เสียงจะค่อยๆ หรี่ลงตามเส้นโค้งเอกซ์โพเนนเชียล เพื่อไม่ให้คุณสะดุ้งตื่นเมื่อเสียงหยุดลงกะทันหัน",
+    feat4Title: "นาฬิกาเซนหัวเตียงยามค่ำคืน",
+    feat4Desc: "เปลี่ยนสมาร์ทโฟนของคุณให้เป็นนาฬิกาหัวเตียงแสนอบอุ่น พร้อมภาพเคลื่อนไหว Lofi ดวงดาวระยิบระยับ และระบบลดแสงหน้าจออัตโนมัติภายใน 5 วินาทีเพื่อถนอมสายตา",
+    feat5Title: "การออกแบบโฆษณาที่ไม่รบกวน",
+    feat5Desc: "การผสานรวม AdMob ถูกจำกัดอย่างเคร่งครัดโดยไม่มีเสียงเล่น และอยู่ในตำแหน่งที่ไม่รบกวน บรรยากาศการพักผ่อนอันเงียบสงบของคุณจะไม่ถูกรบกวนด้วยเสียงดัง",
+    feat6Title: "รองรับ 9 ภาษาทั่วโลก",
+    feat6Desc: "รองรับภาษาอังกฤษ, จีนตัวเต็ม, จีนตัวย่อ, ญี่ปุ่น, เกาหลี, สเปน, เวียดนาม, อินโดนีเซีย และไทย อย่างสมบูรณ์แบบ",
+    presetsTag: "แตะครั้งเดียวเพื่อฟัง",
+    presetsTitle: "ชุดเสียงที่ปรับแต่งมาอย่างเชี่ยวชาญ",
+    presetsSubtitle: "ความสมดุลของคลื่นความถี่ที่ออกแบบมาสำหรับสภาวะจิตใจและการพักผ่อนโดยเฉพาะ",
+    preset1Name: "หลับลึก (Deep Sleep)",
+    preset1Tag: "คลื่นเดลตา • บราวน์นอยส์",
+    preset1Desc: "ม่านเสียงความถี่ต่ำที่ปรับแต่งมาเพื่อปลอบประโลมจิตใจที่ว้าวุ่น และนำพาสมองเข้าสู่การหลับลึกคลื่นเดลตาเพื่อฟื้นฟูร่างกาย",
+    preset2Name: "ป่ากลางสายฝน (Rainy Forest)",
+    preset2Tag: "สายฝน • ฟ้าร้อง • พุ่มไม้",
+    preset2Desc: "ดื่มด่ำกับเสียงหยาดฝนโปรยปรายลงบนยอดไม้หนาทึบ พร้อมเสียงฟ้าร้องกังวานไกลๆ และกลิ่นอายบรรยากาศป่าอันสดชื่น",
+    preset3Name: "คืนฤดูร้อน (Summer Night)",
+    preset3Tag: "จิ้งหรีด • สายลม • สระน้ำ",
+    preset3Desc: "ค่ำคืนชนบทอันแสนคิดถึง เสียงจิ้งหรีดขับขาน ต้นอ้อไหวเอน และลมพัดโชยยามเที่ยงคืนใต้แสงดาว",
+    preset4Name: "คาเฟ่อบอุ่น (Cozy Cafe)",
+    preset4Tag: "พิงก์นอยส์ • บรรยากาศอบอุ่น",
+    preset4Desc: "สเปกตรัมเสียงที่สมดุล เหมาะสำหรับการอ่านหนังสือ เขียนโค้ด และมีสมาธิอย่างลึกซึ้งโดยไม่ทำให้ล้าหู",
+    screenTag: "ภาพตัวอย่างแอป",
+    screenTitle: "โอเอซิสแห่งความสงบสำหรับประสาทสัมผัสของคุณ",
+    screenSubtitle: "ออกแบบด้วยสไตล์มืดประหยัดพลังงาน OLED ผสานกระจกฝ้า Glassmorphism และการเคลื่อนไหวที่ลื่นไหล",
+    cap1Title: "ชุดเสียงสำเร็จรูป",
+    cap1Desc: "แตะครั้งเดียวเพื่อฟังคลื่นเดลตา กระท่อมกลางสายฝน และคืนฤดูร้อน",
+    cap2Title: "นาฬิกาเซนหัวเตียง",
+    cap2Desc: "บรรยากาศห้องนอนแสนอบอุ่นพร้อมนาฬิกาสดและระบบหรี่แสงถนอมสายตา",
+    cap3Title: "โหมด Lofi โฟกัสและการเรียน",
+    cap3Desc: "บรรยากาศห้องทำงานวันฝนตก เหมาะสำหรับการอ่านหนังสือ ทำงาน และผ่อนคลาย",
+    cap4Title: "คลังเสียงและมิกเซอร์ส่วนตัว",
+    cap4Desc: "เสียงสังเคราะห์และเสียงธรรมชาติกว่า 12 ชนิด พร้อมแถบเลื่อนปรับระดับเสียงแต่ละแทร็กอย่างอิสระ",
+    dlTitle: "พร้อมสัมผัสการนอนหลับที่เงียบสงบในคืนนี้หรือยัง?",
+    dlDesc: "ดาวน์โหลด Snoozy สำหรับ Android ทำงานออฟไลน์ 100% น้ำหนักเบา และประหยัดแบตเตอรี่",
+    dlBtnApkSmall: "ดาวน์โหลด Android APK โดยตรง",
+    dlBtnApkLarge: "ดาวน์โหลด APK (v1.0.6)",
+    privTag: "ความโปร่งใสและการปฏิบัติตามข้อกำหนด",
+    privTitle: "นโยบายความเป็นส่วนตัว (Privacy Policy)",
+    privSubtitle: "อัปเดตล่าสุด: 16 กันยายน 2026 • มีผลบังคับใช้ทันที",
+    privHighTitle: "🔒 พันธกิจหลักของเรา:",
+    privHighDesc: "Snoozy ถูกสร้างขึ้นด้วยสถาปัตยกรรมที่คำนึงถึงความเป็นส่วนตัวตั้งแต่เริ่มต้น การสังเคราะห์เสียง การตั้งเวลา และการตั้งค่าระดับเสียงทั้งหมดทำงานในอุปกรณ์ของคุณ 100% เราไม่มีการติดตาม รวบรวม หรือส่งข้อมูลระบุตัวตนส่วนบุคคล (PII) ใดๆ ทั้งสิ้น",
+    p1Head: "1. การรวบรวมและการประมวลผลข้อมูล",
+    p1Desc: "Snoozy ไม่ต้องการการลงทะเบียนผู้ใช้ ข้อมูลเข้าสู่ระบบ รายชื่อติดต่อ ตำแหน่งที่ตั้ง หรือการเข้าถึงไมโครโฟน โดยมีรายละเอียดดังนี้:",
+    p1L1Title: "ไม่มีข้อมูลส่วนบุคคล:",
+    p1L1Desc: "เราไม่รวบรวมชื่อ ที่อยู่อีเมล หมายเลขโทรศัพท์ หรือหมายเลขระบุฮาร์ดแวร์",
+    p1L2Title: "ประมวลผลเสียงภายในเครื่อง:",
+    p1L2Desc: "ไวท์นอยส์และเสียงธรรมชาติทั้งหมดถูกสังเคราะห์สดใน CPU/DSP ของอุปกรณ์ ไม่มีการส่งข้อมูลเสียงไปยังเซิร์ฟเวอร์ภายนอก",
+    p1L3Title: "การจัดเก็บข้อมูลในเครื่อง:",
+    p1L3Desc: "การตั้งค่ามิกซ์เสียง ระดับเสียง การตั้งเวลา และภาษา จะถูกจัดเก็บไว้ในอุปกรณ์ของคุณเท่านั้นผ่าน SharedPreferences แบบเข้ารหัสของ Android",
+    p2Head: "2. คำอธิบายการขอสิทธิ์ใน Android",
+    p2Desc: "Snoozy ขอเฉพาะสิทธิ์ขั้นต่ำที่จำเป็นเพื่อให้การเล่นเสียงบรรยากาศทำงานเบื้องหลังได้อย่างราบรื่น:",
+    p2L1: "จำเป็นเพื่อให้ Android สามารถเล่นเสียงและนับเวลาถอยหลังได้อย่างต่อเนื่องเมื่อปิดหน้าจอหรือใช้งานแอปอื่น",
+    p2L2: "ช่วยให้การสตรีมบัฟเฟอร์เสียงราบรื่น และรับประกันว่าการหรี่เสียง 30 วินาทีสุดท้ายจะทำงานได้อย่างสมบูรณ์โดยไม่ถูกระบบระงับ",
+    p2L3: "ใช้โดย Google AdMob SDK เพื่อแสดงโฆษณาแบนเนอร์เท่านั้น",
+    p2L4: "ช่วยให้แอปแสดงสถานะการเล่นและเวลาที่เหลือในแถบการแจ้งเตือนของ Android",
+    p3Head: "3. กฎเกณฑ์เกี่ยวกับโฆษณาและการป้องกันการรบกวน",
+    p3Desc: "Snoozy ใช้ Google AdMob เพื่อเปิดให้ใช้งานฟรี เพื่อรักษาบรรยากาศการนอนหลับที่เงียบสงบ เราปฏิบัติตามหลักการไม่รบกวนอย่างเคร่งครัด:",
+    p3L1: "โฆษณาแบนเนอร์ทั้งหมดถูกบังคับปิดเสียง ไม่มีการส่งเสียงรบกวนกะทันหัน",
+    p3L2: "ตำแหน่งโฆษณาอยู่ห่างจากปุ่มควบคุม เพื่อหลีกเลี่ยงการแตะโดยไม่ตั้งใจก่อนนอน",
+    p3L3: "ผู้ใช้ที่อัปเกรดเป็น PRO จะเพลิดเพลินกับประสบการณ์ไร้โฆษณา 100%",
+    p4Head: "4. ระบบนิเวศ Solana Mobile / อุปกรณ์",
+    p4Desc: "Snoozy เวอร์ชัน Solana เผยแพร่ผ่าน Solana dApp Store โปรดทราบว่า Snoozy ไม่มีการเชื่อมต่อกับกระเป๋าเงินคริปโต ไม่ขอ Private Key และไม่มีการทำธุรกรรมบล็อกเชน เป็นแอปเสียงเดี่ยวที่ปรับแต่งมาเพื่ออุปกรณ์ Solana Seeker โดยเฉพาะ",
+    p5Head: "5. ความเป็นส่วนตัวของเด็ก (สอดคล้องกับ COPPA)",
+    p5Desc: "Snoozy ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี และไม่รวบรวมข้อมูลส่วนบุคคลใดๆ จากผู้ใช้ทุกวัย",
+    p6Head: "6. ช่องทางการติดต่อและสอบถาม",
+    p6Desc: "หากคุณมีคำถามใดๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ สามารถติดต่อผู้พัฒนาได้ทางอีเมล aiohlala69@gmail.com หรือผ่าน GitHub อย่างเป็นทางการของเรา",
+    footerDesc: "สภาพแวดล้อมเสียงอัลกอริทึมเพื่อการนอนหลับลึก การทำสมาธิ และการโฟกัสอย่างมีประสิทธิภาพสูงสุด"
   }
+};
+
+const langLabels = {
+  en: 'English',
+  zh: '繁體中文',
+  th: 'ไทย'
 };
 
 let currentLang = 'en';
 
 function setLanguage(lang) {
+  if (!translations[lang]) {
+    lang = 'en';
+  }
   currentLang = lang;
   localStorage.setItem('goodsound_lang', lang);
-  
+
+  // Update HTML lang attribute
+  const htmlLangMap = { en: 'en', zh: 'zh-TW', th: 'th' };
+  document.documentElement.setAttribute('lang', htmlLangMap[lang] || lang);
+
   const dict = translations[lang] || translations.en;
   
+  // Translate all marked elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
@@ -220,10 +335,23 @@ function setLanguage(lang) {
     }
   });
 
-  const langBtn = document.getElementById('lang-toggle');
-  if (langBtn) {
-    langBtn.textContent = (lang === 'en') ? '繁中' : 'English';
+  // Update dropdown button current text
+  const currentLabelEl = document.getElementById('lang-current-label');
+  if (currentLabelEl) {
+    currentLabelEl.textContent = langLabels[lang] || 'English';
   }
+
+  // Update selected highlight in dropdown menu
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    const optLang = opt.getAttribute('data-lang');
+    if (optLang === lang) {
+      opt.classList.add('selected');
+      opt.setAttribute('aria-selected', 'true');
+    } else {
+      opt.classList.remove('selected');
+      opt.setAttribute('aria-selected', 'false');
+    }
+  });
 }
 
 function initTheme() {
@@ -255,15 +383,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('goodsound_lang') || 'en';
   setLanguage(savedLang);
 
-  // Bind Buttons
-  const langToggleBtn = document.getElementById('lang-toggle');
-  if (langToggleBtn) {
-    langToggleBtn.addEventListener('click', () => {
-      const nextLang = (currentLang === 'en') ? 'zh' : 'en';
-      setLanguage(nextLang);
+  // Language Dropdown Setup
+  const langWrapper = document.getElementById('lang-dropdown-wrapper');
+  const langMenuBtn = document.getElementById('lang-menu-btn');
+  const langOptions = document.querySelectorAll('.lang-option');
+
+  if (langMenuBtn && langWrapper) {
+    // Toggle dropdown open/close
+    langMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = langWrapper.classList.toggle('active');
+      langMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Option selection
+    langOptions.forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const selectedLang = option.getAttribute('data-lang');
+        if (selectedLang) {
+          setLanguage(selectedLang);
+        }
+        langWrapper.classList.remove('active');
+        langMenuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!langWrapper.contains(e.target)) {
+        langWrapper.classList.remove('active');
+        langMenuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && langWrapper.classList.contains('active')) {
+        langWrapper.classList.remove('active');
+        langMenuBtn.setAttribute('aria-expanded', 'false');
+        langMenuBtn.focus();
+      }
     });
   }
 
+  // Theme Toggle
   const themeToggleBtn = document.getElementById('theme-toggle');
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', toggleTheme);
