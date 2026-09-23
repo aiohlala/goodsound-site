@@ -386,14 +386,40 @@ document.addEventListener('DOMContentLoaded', () => {
   // Language Dropdown Setup
   const langWrapper = document.getElementById('lang-dropdown-wrapper');
   const langMenuBtn = document.getElementById('lang-menu-btn');
+  const langMenu = document.getElementById('lang-dropdown-menu');
   const langOptions = document.querySelectorAll('.lang-option');
 
-  if (langMenuBtn && langWrapper) {
-    // Toggle dropdown open/close
+  if (langMenuBtn && langWrapper && langMenu) {
+    const openMenu = () => {
+      langWrapper.classList.add('active');
+      langMenu.classList.add('is-open');
+      langMenu.style.setProperty('display', 'flex', 'important');
+      langMenuBtn.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeMenu = () => {
+      langWrapper.classList.remove('active');
+      langMenu.classList.remove('is-open');
+      langMenu.style.setProperty('display', 'none', 'important');
+      langMenuBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    const toggleMenu = () => {
+      const isOpen = langWrapper.classList.contains('active') || langMenu.classList.contains('is-open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    };
+
+    // Ensure hidden state initially
+    closeMenu();
+
+    // Toggle dropdown open/close on button click
     langMenuBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const isOpen = langWrapper.classList.toggle('active');
-      langMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggleMenu();
     });
 
     // Option selection
@@ -404,24 +430,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedLang) {
           setLanguage(selectedLang);
         }
-        langWrapper.classList.remove('active');
-        langMenuBtn.setAttribute('aria-expanded', 'false');
+        closeMenu();
       });
     });
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!langWrapper.contains(e.target)) {
-        langWrapper.classList.remove('active');
-        langMenuBtn.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     });
 
     // Close menu with Escape key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && langWrapper.classList.contains('active')) {
-        langWrapper.classList.remove('active');
-        langMenuBtn.setAttribute('aria-expanded', 'false');
+      if (e.key === 'Escape' && (langWrapper.classList.contains('active') || langMenu.classList.contains('is-open'))) {
+        closeMenu();
         langMenuBtn.focus();
       }
     });
