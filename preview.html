@@ -277,11 +277,168 @@
     .footer a:hover {
       text-decoration: underline;
     }
+  
+    /* PIN Protection Modal */
+    .pin-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(7, 9, 19, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      padding: 20px;
+    }
+
+    .pin-card {
+      background: rgba(18, 24, 43, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(99, 102, 241, 0.2);
+      border-radius: 28px;
+      padding: 40px 32px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      animation: cardAppear 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes cardAppear {
+      from { opacity: 0; transform: scale(0.92) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .pin-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: inline-block;
+      filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.4));
+    }
+
+    .pin-card h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .pin-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .pin-input-group {
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pin-input {
+      width: 180px;
+      padding: 14px 18px;
+      background: rgba(10, 14, 28, 0.8);
+      border: 2px solid rgba(99, 102, 241, 0.4);
+      border-radius: 16px;
+      color: #FFFFFF;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 12px;
+      text-align: center;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .pin-input:focus {
+      border-color: #818CF8;
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.45);
+      background: rgba(15, 20, 38, 0.95);
+    }
+
+    .pin-input.shake {
+      animation: shake 0.45s ease-in-out;
+      border-color: #EF4444;
+      box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-10px); }
+      40%, 80% { transform: translateX(10px); }
+    }
+
+    .pin-error {
+      color: #F87171;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+      display: none;
+    }
+
+    .pin-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    }
+
+    .pin-btn:hover {
+      background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5);
+    }
+
+    .pin-back {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .pin-back:hover {
+      color: #FFFFFF;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="container">
+  
+  <!-- PIN Protection Overlay -->
+  <div id="pin-overlay" class="pin-overlay">
+    <div class="pin-card">
+      <div class="pin-icon">🔐</div>
+      <h2>音效試聽室受保護專區</h2>
+      <p>此頁面為內部授權試聽室，請輸入 4 位數存取 PIN 碼以解鎖無縫循環原聲與下載。</p>
+      <div class="pin-input-group">
+        <input type="password" id="pin-input" class="pin-input" maxlength="4" placeholder="••••" autocomplete="off" inputmode="numeric" autofocus>
+      </div>
+      <div id="pin-error" class="pin-error">⚠️ PIN 碼不正確，請重新輸入</div>
+      <button id="pin-submit" class="pin-btn" onclick="verifyPin()">解鎖進入試聽室</button>
+      <a href="index.html" class="pin-back">← 返回 GoodSound 官網首頁</a>
+    </div>
+  </div>
+
+  <div class="container" id="protected-content" style="display: none;">
     <div class="header">
       <div class="badge">🌿 100% 純淨自然原聲取樣 • 無背景音樂干擾</div>
       <h1>GoodSound 舒眠音效試聽室</h1>
@@ -607,5 +764,54 @@
       }
     }
   </script>
+
+  <script>
+    const CORRECT_PIN = "8888";
+
+    function checkAuth() {
+      if (sessionStorage.getItem('goodsound_preview_auth') === CORRECT_PIN) {
+        unlockContent();
+      }
+    }
+
+    function verifyPin() {
+      const input = document.getElementById('pin-input');
+      const err = document.getElementById('pin-error');
+      if (input.value === CORRECT_PIN) {
+        sessionStorage.setItem('goodsound_preview_auth', CORRECT_PIN);
+        unlockContent();
+      } else {
+        err.style.display = 'block';
+        input.classList.add('shake');
+        setTimeout(() => input.classList.remove('shake'), 450);
+        input.value = '';
+        input.focus();
+      }
+    }
+
+    function unlockContent() {
+      const overlay = document.getElementById('pin-overlay');
+      const content = document.getElementById('protected-content');
+      if (overlay) overlay.style.display = 'none';
+      if (content) {
+        content.style.display = 'block';
+        content.style.animation = 'fadeIn 0.4s ease forwards';
+      }
+    }
+
+    const pinInput = document.getElementById('pin-input');
+    if (pinInput) {
+      pinInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {
+          verifyPin();
+        } else if (this.value.length === 4) {
+          verifyPin();
+        }
+      });
+    }
+
+    checkAuth();
+  </script>
+
 </body>
 </html>
