@@ -13,7 +13,9 @@ const translations = {
     heroPill: "✨ Infinite Procedural Audio • 100% Offline DSP",
     heroTitle: "Sleep Deeply. <br><span class=\"gradient-text\">Relax Naturally.</span>",
     heroDesc: "Snoozy crafts tailored acoustic environments using real-time algorithmic sound synthesis. Combine pure white, pink, and brown noise with gentle rain, warm fires, ocean waves, and cozy lofi backgrounds for uninterrupted sleep and laser focus.",
-    heroDownloadBtn: "Download APK (v1.0.7)",
+    heroPlayBtn: "Get it on Google Play",
+    heroFriendBtn: "Friendship Beta",
+    heroDownloadBtn: "Get it on Google Play",
     heroLearnMore: "Explore Features",
     heroExploreBtn: "Explore Features",
     badgeSolana: "Offline Procedural DSP",
@@ -68,8 +70,18 @@ const translations = {
     cap4Desc: "12+ procedural white noise & acoustic layers with granular multi-track volume tuning",
     dlTitle: "Ready for Peaceful Sleep Tonight?",
     dlDesc: "Download Snoozy for Android. 100% offline, lightweight, and battery-friendly.",
+    dlPlaySmall: "Android Official Closed Beta",
+    dlPlayLarge: "Get it on Google Play",
+    dlFriendSmall: "PureFree v1.0.10 Ad-Free",
+    dlFriendLarge: "Friendship Beta (PIN)",
+    dlMetaVer: "📦 Version 1.0.10",
+    pinModalTitle: "🔐 Friendship Beta Access",
+    pinModalDesc: "This is a private ad-free Pure edition (v1.0.10). Please enter your 4-digit PIN to download.",
+    pinModalSubmit: "Unlock & Download APK",
+    pinModalCancel: "Cancel",
+    pinModalError: "⚠️ Incorrect PIN, please try again",
     dlBtnApkSmall: "Android APK Direct Download",
-    dlBtnApkLarge: "Download APK (v1.0.7)",
+    dlBtnApkLarge: "Download APK (v1.0.10)",
     privTag: "Compliance & Transparency",
     privTitle: "Privacy Policy",
     privSubtitle: "Last Updated: September 16, 2026 • Effective Immediately",
@@ -114,7 +126,9 @@ const translations = {
     heroPill: "✨ 無限程序化即時音訊合成 • 100% 本地 DSP",
     heroTitle: "深層好眠。 <br><span class=\"gradient-text\">自然放鬆。</span>",
     heroDesc: "Snoozy 透過即時演算法合成專屬聲音環境。自由融合純淨白噪音、粉紅噪音、棕色噪音與雨聲、柴火、海浪及溫馨 Lofi 背景，打造極致沉浸的助眠與專注體驗。",
-    heroDownloadBtn: "APK 下載 (v1.0.7)",
+    heroPlayBtn: "前往 Google Play 下載",
+    heroFriendBtn: "友情測試",
+    heroDownloadBtn: "前往 Google Play 下載",
     heroLearnMore: "探索功能",
     heroExploreBtn: "探索功能",
     badgeSolana: "100% 本地即時演算",
@@ -169,8 +183,18 @@ const translations = {
     cap4Desc: "12+ 種程序化白噪音與自然原聲，獨立音量推桿隨心調配個人專屬聲景",
     dlTitle: "今晚就享受一場純淨深層好眠",
     dlDesc: "立即下載 Snoozy for Android。100% 本地運算、極致省電、純淨助眠。",
+    dlPlaySmall: "Android 官方封閉測試版",
+    dlPlayLarge: "前往 Google Play 下載",
+    dlFriendSmall: "PureFree v1.0.10 零廣告純淨版",
+    dlFriendLarge: "友情測試 (輸入 PIN 碼)",
+    dlMetaVer: "📦 Version 1.0.10",
+    pinModalTitle: "🔐 友情測試專屬下載",
+    pinModalDesc: "此版本為內部無廣告純淨版 (v1.0.10)，請輸入 4 位數 PIN 碼以解鎖下載。",
+    pinModalSubmit: "解鎖並開始下載",
+    pinModalCancel: "取消",
+    pinModalError: "⚠️ PIN 碼不正確，請重新輸入",
     dlBtnApkSmall: "Android APK 直接下載",
-    dlBtnApkLarge: "APK 下載 (v1.0.7)",
+    dlBtnApkLarge: "APK 下載 (v1.0.10)",
     privTag: "合規與透明承諾",
     privTitle: "隱私權政策 (Privacy Policy)",
     privSubtitle: "最後更新：2026 年 9 月 16 日 • 即刻生效",
@@ -215,7 +239,9 @@ const translations = {
     heroPill: "✨ สังเคราะห์เสียงอัลกอริทึมไร้ที่สิ้นสุด • ออฟไลน์ DSP 100%",
     heroTitle: "หลับลึกสนิท <br><span class=\"gradient-text\">ผ่อนคลายอย่างเป็นธรรมชาติ</span>",
     heroDesc: "Snoozy สร้างสภาพแวดล้อมเสียงที่ออกแบบมาเพื่อคุณโดยเฉพาะ ด้วยการสังเคราะห์เสียงตามเวลาจริง ผสมผสานไวท์นอยส์ พิงก์นอยส์ บราวน์นอยส์บริสุทธิ์ เข้ากับเสียงฝนตก กองไฟ คลื่นทะเล และภาพ Lofi อบอุ่น เพื่อการนอนหลับลึกและการมีสมาธิอย่างไร้เสียงรบกวน",
-    heroDownloadBtn: "ดาวน์โหลด APK (v1.0.7)",
+    heroPlayBtn: "ดาวน์โหลดบน Google Play",
+    heroFriendBtn: "ทดสอบสำหรับเพื่อน",
+    heroDownloadBtn: "ดาวน์โหลดบน Google Play",
     heroLearnMore: "สำรวจฟีเจอร์",
     heroExploreBtn: "สำรวจฟีเจอร์",
     badgeSolana: "ประมวลผล DSP ออฟไลน์ 100%",
@@ -259,7 +285,7 @@ const translations = {
     preset4Desc: "สเปกตรัมเสียงที่สมดุล เหมาะสำหรับการอ่านหนังสือ เขียนโค้ด และมีสมาธิอย่างลึกซึ้งโดยไม่ทำให้ล้าหู",
     screenTag: "ภาพตัวอย่างแอป",
     screenTitle: "โอเอซิสแห่งความสงบสำหรับประสาทสัมผัสของคุณ",
-    screenSubtitle: "ออกแบบด้วยสไตล์มืดประหยัดพลังงาน OLED ผสานกระจกฝ้า Glassmorphism และการเคลื่อนไหวที่ลื่นไหล",
+    screenSubtitle: "ออกแบบด้วยสไตล์มืดประหยัดพลังงาน OLED ผสานกระจกฝ้า Glassmorphism และการเคลื่อนไไหล",
     cap1Title: "ชุดเสียงสำเร็จรูป",
     cap1Desc: "แตะครั้งเดียวเพื่อฟังคลื่นเดลตา กระท่อมกลางสายฝน และคืนฤดูร้อน",
     cap2Title: "นาฬิกาเซนหัวเตียง",
@@ -270,8 +296,18 @@ const translations = {
     cap4Desc: "เสียงสังเคราะห์และเสียงธรรมชาติกว่า 12 ชนิด พร้อมแถบเลื่อนปรับระดับเสียงแต่ละแทร็กอย่างอิสระ",
     dlTitle: "พร้อมสัมผัสการนอนหลับที่เงียบสงบในคืนนี้หรือยัง?",
     dlDesc: "ดาวน์โหลด Snoozy สำหรับ Android ทำงานออฟไลน์ 100% น้ำหนักเบา และประหยัดแบตเตอรี่",
+    dlPlaySmall: "Android รุ่นทดสอบปิดอย่างเป็นทางการ",
+    dlPlayLarge: "ดาวน์โหลดบน Google Play",
+    dlFriendSmall: "PureFree v1.0.10 ไร้โฆษณา",
+    dlFriendLarge: "ทดสอบสำหรับเพื่อน (ต้องใช้ PIN)",
+    dlMetaVer: "📦 Version 1.0.10",
+    pinModalTitle: "🔐 ดาวน์โหลดรุ่นทดสอบสำหรับเพื่อน",
+    pinModalDesc: "นี่คือรุ่น Pure ไร้โฆษณา (v1.0.10) โปรดป้อน PIN 4 หลักเพื่อปลดล็อกการดาวน์โหลด",
+    pinModalSubmit: "ปลดล็อกและดาวน์โหลด APK",
+    pinModalCancel: "ยกเลิก",
+    pinModalError: "⚠️ รหัส PIN ไม่ถูกต้อง โปรดลองอีกครั้ง",
     dlBtnApkSmall: "ดาวน์โหลด Android APK โดยตรง",
-    dlBtnApkLarge: "ดาวน์โหลด APK (v1.0.7)",
+    dlBtnApkLarge: "ดาวน์โหลด APK (v1.0.10)",
     privTag: "ความโปร่งใสและการปฏิบัติตามข้อกำหนด",
     privTitle: "นโยบายความเป็นส่วนตัว (Privacy Policy)",
     privSubtitle: "อัปเดตล่าสุด: 16 กันยายน 2026 • มีผลบังคับใช้ทันที",
@@ -455,4 +491,89 @@ document.addEventListener('DOMContentLoaded', () => {
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', toggleTheme);
   }
+
+  // Auto-verify on 4-digit input
+  const pinInput = document.getElementById('pin-input');
+  if (pinInput) {
+    pinInput.addEventListener('input', function() {
+      if (this.value.length === 4) {
+        verifyBetaPin();
+      }
+    });
+  }
 });
+
+// Friendship Beta PIN Protection Logic
+const CORRECT_BETA_PIN = "8888";
+const BETA_DOWNLOAD_URL = "downloads/Snoozy-PureFree-v1.0.10.apk";
+
+function openPinModal() {
+  if (sessionStorage.getItem('goodsound_beta_auth') === CORRECT_BETA_PIN) {
+    triggerBetaDownload();
+    return;
+  }
+  const modal = document.getElementById('pin-modal');
+  const input = document.getElementById('pin-input');
+  const err = document.getElementById('pin-error');
+  if (modal) {
+    modal.style.display = 'flex';
+    if (err) err.style.display = 'none';
+    if (input) {
+      input.value = '';
+      setTimeout(() => input.focus(), 150);
+    }
+  }
+}
+
+function closePinModal() {
+  const modal = document.getElementById('pin-modal');
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
+
+function handleModalBackdropClick(e) {
+  if (e.target && e.target.id === 'pin-modal') {
+    closePinModal();
+  }
+}
+
+function verifyBetaPin() {
+  const input = document.getElementById('pin-input');
+  const err = document.getElementById('pin-error');
+  if (!input) return;
+
+  if (input.value.trim() === CORRECT_BETA_PIN) {
+    sessionStorage.setItem('goodsound_beta_auth', CORRECT_BETA_PIN);
+    closePinModal();
+    triggerBetaDownload();
+  } else {
+    if (err) err.style.display = 'block';
+    input.classList.add('shake');
+    setTimeout(() => input.classList.remove('shake'), 450);
+    input.value = '';
+    input.focus();
+  }
+}
+
+function triggerBetaDownload() {
+  const a = document.createElement('a');
+  a.href = BETA_DOWNLOAD_URL;
+  a.download = "Snoozy-PureFree-v1.0.10.apk";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+// Global modal keyboard events
+document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById('pin-modal');
+  if (modal && modal.style.display !== 'none') {
+    if (e.key === 'Escape') {
+      closePinModal();
+    } else if (e.key === 'Enter') {
+      verifyBetaPin();
+    }
+  }
+});
+

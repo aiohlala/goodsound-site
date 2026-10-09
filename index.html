@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260923.3">
+  <link rel="stylesheet" href="styles.css?v=20261009.1">
   <style>
     /* Immediate inline defense against unstyled display or cached CSS */
     .lang-dropdown-wrapper { position: relative; display: inline-block; }
@@ -122,14 +122,18 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="downloads/Snoozy-v1.0.7.apk" download="Snoozy-v1.0.7.apk" class="btn-hero-primary" id="btn-hero-download">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
+            <a href="https://play.google.com/store/apps/details?id=com.goodsound.app" target="_blank" rel="noopener" class="btn-hero-primary" id="btn-hero-playstore">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M3.609 1.814c-.39.43-.609 1.006-.609 1.63v17.112c0 .624.219 1.2.61 1.63l10.183-10.186L3.609 1.814zm11.24 11.243l2.253 2.253-11.45 6.611 9.197-8.864zm0-2.114L5.652 2.08l11.45 6.61-2.253 2.253zm1.488 1.057l3.864 2.231c.96.554.96 1.464 0 2.018l-3.864 2.23-2.55-2.55 2.55-2.55z"/>
               </svg>
-              <span data-i18n="heroDownloadBtn">Download APK (v1.0.7)</span>
+              <span data-i18n="heroPlayBtn">Get it on Google Play</span>
             </a>
+            <button type="button" class="btn-hero-secondary" id="btn-hero-friendship" onclick="openPinModal()">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span data-i18n="heroFriendBtn">友情測試</span>
+            </button>
             <a href="#features" class="btn-hero-secondary" data-i18n="heroLearnMore">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
@@ -384,25 +388,36 @@
             <p class="download-subtitle" data-i18n="dlDesc">Download Snoozy for Android. 100% offline, lightweight, and battery-friendly.</p>
 
             <div class="download-buttons">
-              <a href="downloads/Snoozy-v1.0.7.apk" download="Snoozy-v1.0.7.apk" class="btn-dl-main" id="btn-dl-apk">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
+              <!-- Primary: Google Play -->
+              <a href="https://play.google.com/store/apps/details?id=com.goodsound.app" target="_blank" rel="noopener" class="btn-dl-main" id="btn-dl-playstore">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path d="M3.609 1.814c-.39.43-.609 1.006-.609 1.63v17.112c0 .624.219 1.2.61 1.63l10.183-10.186L3.609 1.814zm11.24 11.243l2.253 2.253-11.45 6.611 9.197-8.864zm0-2.114L5.652 2.08l11.45 6.61-2.253 2.253zm1.488 1.057l3.864 2.231c.96.554.96 1.464 0 2.018l-3.864 2.23-2.55-2.55 2.55-2.55z"/>
                 </svg>
-                <div class="dl-btn-text">
-                  <span class="dl-btn-small" data-i18n="dlBtnApkSmall">Android APK Direct Download</span>
-                  <strong class="dl-btn-large" data-i18n="dlBtnApkLarge">Download APK (v1.0.7)</strong>
+                <div class="dl-btn-text text-left">
+                  <span class="dl-btn-small" data-i18n="dlPlaySmall">Android Official Closed Beta</span>
+                  <strong class="dl-btn-large" data-i18n="dlPlayLarge">Get it on Google Play</strong>
                 </div>
               </a>
+
+              <!-- Secondary: 友情測試 -->
+              <button type="button" class="btn-dl-alt" id="btn-dl-friendship" onclick="openPinModal()">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="dl-btn-text text-left">
+                  <span class="dl-btn-small" data-i18n="dlFriendSmall">PureFree v1.0.10 Ad-Free</span>
+                  <strong class="dl-btn-large" data-i18n="dlFriendLarge">友情測試 (輸入 PIN 碼)</strong>
+                </div>
+              </button>
             </div>
 
             <div class="dl-meta">
-              <span>📦 Version 1.0.7</span>
+              <span data-i18n="dlMetaVer">📦 Version 1.0.10</span>
               <span>•</span>
               <span>📱 Android 8.0+ (API 26+)</span>
               <span>•</span>
-              <span>🛡️ VirusTotal Clean</span>
+              <span>🛡️ 100% VirusTotal Clean</span>
             </div>
 
             </div>
@@ -497,6 +512,24 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260923.3"></script>
+  <!-- PIN Protection Modal -->
+  <div id="pin-modal" class="pin-modal-overlay" style="display: none;" onclick="handleModalBackdropClick(event)">
+    <div class="pin-modal-card" onclick="event.stopPropagation()">
+      <button type="button" class="pin-modal-close" onclick="closePinModal()" aria-label="Close">✕</button>
+      <div class="pin-modal-icon">🔐</div>
+      <h3 class="pin-modal-title" data-i18n="pinModalTitle">友情測試專屬下載</h3>
+      <p class="pin-modal-desc" data-i18n="pinModalDesc">此版本為內部無廣告純淨版 (v1.0.10)，請輸入 4 位數 PIN 碼以解鎖下載。</p>
+      <div class="pin-input-group">
+        <input type="password" id="pin-input" class="pin-modal-input" maxlength="4" placeholder="••••" autocomplete="off" inputmode="numeric">
+      </div>
+      <div id="pin-error" class="pin-modal-error" style="display: none;" data-i18n="pinModalError">⚠️ PIN 碼不正確，請重新輸入</div>
+      <div class="pin-modal-actions">
+        <button type="button" class="pin-modal-submit" onclick="verifyBetaPin()" data-i18n="pinModalSubmit">解鎖並開始下載</button>
+        <button type="button" class="pin-modal-cancel" onclick="closePinModal()" data-i18n="pinModalCancel">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=20261009.1"></script>
 </body>
 </html>
