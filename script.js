@@ -72,16 +72,16 @@ const translations = {
     dlDesc: "Download Snoozy for Android. 100% offline, lightweight, and battery-friendly.",
     dlPlaySmall: "Android Official Closed Beta",
     dlPlayLarge: "Get it on Google Play",
-    dlFriendSmall: "PureFree v1.0.10 Ad-Free",
+    dlFriendSmall: "PureFree v1.0.11 Ad-Free",
     dlFriendLarge: "Friendship Beta (PIN)",
-    dlMetaVer: "📦 Version 1.0.10",
+    dlMetaVer: "📦 Version 1.0.11",
     pinModalTitle: "🔐 Friendship Beta Access",
-    pinModalDesc: "This is a private ad-free Pure edition (v1.0.10). Please enter your 4-digit PIN to download.",
+    pinModalDesc: "This is a private ad-free Pure edition (v1.0.11). Please enter your 4-digit PIN to download.",
     pinModalSubmit: "Unlock & Download APK",
     pinModalCancel: "Cancel",
     pinModalError: "⚠️ Incorrect PIN, please try again",
     dlBtnApkSmall: "Android APK Direct Download",
-    dlBtnApkLarge: "Download APK (v1.0.10)",
+    dlBtnApkLarge: "Download APK (v1.0.11)",
     privTag: "Compliance & Transparency",
     privTitle: "Privacy Policy",
     privSubtitle: "Last Updated: September 16, 2026 • Effective Immediately",
@@ -185,16 +185,16 @@ const translations = {
     dlDesc: "立即下載 Snoozy for Android。100% 本地運算、極致省電、純淨助眠。",
     dlPlaySmall: "Android 官方封閉測試版",
     dlPlayLarge: "前往 Google Play 下載",
-    dlFriendSmall: "PureFree v1.0.10 零廣告純淨版",
+    dlFriendSmall: "PureFree v1.0.11 零廣告純淨版",
     dlFriendLarge: "友情測試 (輸入 PIN 碼)",
-    dlMetaVer: "📦 Version 1.0.10",
+    dlMetaVer: "📦 Version 1.0.11",
     pinModalTitle: "🔐 友情測試專屬下載",
-    pinModalDesc: "此版本為內部無廣告純淨版 (v1.0.10)，請輸入 4 位數 PIN 碼以解鎖下載。",
+    pinModalDesc: "此版本為內部無廣告純淨版 (v1.0.11)，請輸入 4 位數 PIN 碼以解鎖下載。",
     pinModalSubmit: "解鎖並開始下載",
     pinModalCancel: "取消",
     pinModalError: "⚠️ PIN 碼不正確，請重新輸入",
     dlBtnApkSmall: "Android APK 直接下載",
-    dlBtnApkLarge: "APK 下載 (v1.0.10)",
+    dlBtnApkLarge: "APK 下載 (v1.0.11)",
     privTag: "合規與透明承諾",
     privTitle: "隱私權政策 (Privacy Policy)",
     privSubtitle: "最後更新：2026 年 9 月 16 日 • 即刻生效",
@@ -298,16 +298,16 @@ const translations = {
     dlDesc: "ดาวน์โหลด Snoozy สำหรับ Android ทำงานออฟไลน์ 100% น้ำหนักเบา และประหยัดแบตเตอรี่",
     dlPlaySmall: "Android รุ่นทดสอบปิดอย่างเป็นทางการ",
     dlPlayLarge: "ดาวน์โหลดบน Google Play",
-    dlFriendSmall: "PureFree v1.0.10 ไร้โฆษณา",
+    dlFriendSmall: "PureFree v1.0.11 ไร้โฆษณา",
     dlFriendLarge: "ทดสอบสำหรับเพื่อน (ต้องใช้ PIN)",
-    dlMetaVer: "📦 Version 1.0.10",
+    dlMetaVer: "📦 Version 1.0.11",
     pinModalTitle: "🔐 ดาวน์โหลดรุ่นทดสอบสำหรับเพื่อน",
-    pinModalDesc: "นี่คือรุ่น Pure ไร้โฆษณา (v1.0.10) โปรดป้อน PIN 4 หลักเพื่อปลดล็อกการดาวน์โหลด",
+    pinModalDesc: "นี่คือรุ่น Pure ไร้โฆษณา (v1.0.11) โปรดป้อน PIN 4 หลักเพื่อปลดล็อกการดาวน์โหลด",
     pinModalSubmit: "ปลดล็อกและดาวน์โหลด APK",
     pinModalCancel: "ยกเลิก",
     pinModalError: "⚠️ รหัส PIN ไม่ถูกต้อง โปรดลองอีกครั้ง",
     dlBtnApkSmall: "ดาวน์โหลด Android APK โดยตรง",
-    dlBtnApkLarge: "ดาวน์โหลด APK (v1.0.10)",
+    dlBtnApkLarge: "ดาวน์โหลด APK (v1.0.11)",
     privTag: "ความโปร่งใสและการปฏิบัติตามข้อกำหนด",
     privTitle: "นโยบายความเป็นส่วนตัว (Privacy Policy)",
     privSubtitle: "อัปเดตล่าสุด: 16 กันยายน 2026 • มีผลบังคับใช้ทันที",
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Friendship Beta PIN Protection Logic
 const CORRECT_BETA_PIN = "8888";
-const BETA_DOWNLOAD_URL = "downloads/Snoozy-PureFree-v1.0.10.apk";
+const BETA_DOWNLOAD_URL = "downloads/Snoozy-PureFree-v1.0.11.apk";
 
 function openPinModal() {
   if (sessionStorage.getItem('goodsound_beta_auth') === CORRECT_BETA_PIN) {
@@ -559,7 +559,7 @@ function verifyBetaPin() {
 function triggerBetaDownload() {
   const a = document.createElement('a');
   a.href = BETA_DOWNLOAD_URL;
-  a.download = "Snoozy-PureFree-v1.0.10.apk";
+  a.download = "Snoozy-PureFree-v1.0.11.apk";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
