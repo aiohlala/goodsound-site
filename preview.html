@@ -200,6 +200,44 @@
       border-color: rgba(245, 158, 11, 0.3);
     }
 
+    .spec-tag.candidate {
+      background: rgba(168, 85, 247, 0.18);
+      color: #C084FC;
+      border: 1px solid rgba(168, 85, 247, 0.4);
+    }
+
+    .spec-tag.romantic {
+      background: rgba(244, 63, 94, 0.18);
+      color: #FB7185;
+      border: 1px solid rgba(244, 63, 94, 0.4);
+    }
+
+    .candidate-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(168, 85, 247, 0.14));
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      border-radius: 18px;
+      padding: 20px 24px;
+      margin: 32px 0 20px 0;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .candidate-banner h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .candidate-banner p {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      line-height: 1.6;
+    }
+
     .audio-player-wrapper {
       width: 100%;
     }
@@ -277,201 +315,156 @@
     .footer a:hover {
       text-decoration: underline;
     }
-  
-    /* PIN Protection Modal */
-    .pin-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(7, 9, 19, 0.94);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 99999;
-      padding: 20px;
-    }
-
-    .pin-card {
-      background: rgba(18, 24, 43, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(99, 102, 241, 0.2);
-      border-radius: 28px;
-      padding: 40px 32px;
-      max-width: 420px;
-      width: 100%;
-      text-align: center;
-      animation: cardAppear 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    @keyframes cardAppear {
-      from { opacity: 0; transform: scale(0.92) translateY(10px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-
-    .pin-icon {
-      font-size: 3rem;
-      margin-bottom: 16px;
-      display: inline-block;
-      filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.4));
-    }
-
-    .pin-card h2 {
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 8px;
-    }
-
-    .pin-card p {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      line-height: 1.5;
-      margin-bottom: 24px;
-    }
-
-    .pin-input-group {
-      margin-bottom: 16px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .pin-input {
-      width: 180px;
-      padding: 14px 18px;
-      background: rgba(10, 14, 28, 0.8);
-      border: 2px solid rgba(99, 102, 241, 0.4);
-      border-radius: 16px;
-      color: #FFFFFF;
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: 12px;
-      text-align: center;
-      outline: none;
-      transition: all 0.25s ease;
-    }
-
-    .pin-input:focus {
-      border-color: #818CF8;
-      box-shadow: 0 0 20px rgba(99, 102, 241, 0.45);
-      background: rgba(15, 20, 38, 0.95);
-    }
-
-    .pin-input.shake {
-      animation: shake 0.45s ease-in-out;
-      border-color: #EF4444;
-      box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
-    }
-
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      20%, 60% { transform: translateX(-10px); }
-      40%, 80% { transform: translateX(10px); }
-    }
-
-    .pin-error {
-      color: #F87171;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 18px;
-      display: none;
-    }
-
-    .pin-btn {
-      width: 100%;
-      padding: 14px;
-      background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
-      color: #FFFFFF;
-      border: none;
-      border-radius: 16px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
-    }
-
-    .pin-btn:hover {
-      background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%);
-      transform: translateY(-1px);
-      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5);
-    }
-
-    .pin-back {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .pin-back:hover {
-      color: #FFFFFF;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
   </style>
 </head>
 <body>
 
-  
-  <!-- PIN Protection Overlay -->
-  <div id="pin-overlay" class="pin-overlay">
-    <div class="pin-card">
-      <div class="pin-icon">🔐</div>
-      <h2>音效試聽室受保護專區</h2>
-      <p>此頁面為內部授權試聽室，請輸入 4 位數存取 PIN 碼以解鎖無縫循環原聲與下載。</p>
-      <div class="pin-input-group">
-        <input type="password" id="pin-input" class="pin-input" maxlength="4" placeholder="••••" autocomplete="off" inputmode="numeric" autofocus>
-      </div>
-      <div id="pin-error" class="pin-error">⚠️ PIN 碼不正確，請重新輸入</div>
-      <button id="pin-submit" class="pin-btn" onclick="verifyPin()">解鎖進入試聽室</button>
-      <a href="index.html" class="pin-back">← 返回 GoodSound 官網首頁</a>
-    </div>
-  </div>
-
-  <div class="container" id="protected-content" style="display: none;">
+  <div class="container">
     <div class="header">
       <div class="badge">🌿 100% 純淨自然原聲取樣 • 無背景音樂干擾</div>
       <h1>GoodSound 舒眠音效試聽室</h1>
       <p class="subtitle">全面去除不相干的背景旋律與合成配樂，保留最純淨的大自然與療癒原聲。全部音檔經過精密等能量（Equal-power）正弦交叉淡出裁切，實現 0 爆音無縫連續循環！</p>
       
       <div class="stats-bar">
-        <span class="stat-pill">✨ 全套 14 首總容量：<strong>7.27 MB</strong></span>
-        <span class="stat-pill">🪶 單檔 <strong>313 ~ 755 KB</strong> (極致高清)</span>
-        <span class="stat-pill">🔁 錄音室級無縫平滑循環 (Seamless Loop)</span>
+        <span class="stat-pill">✨ 全套 14 首總容量：僅 <strong>2.74 MB</strong></span>
+        <span class="stat-pill">🪶 單檔僅 <strong>99 ~ 280 KB</strong></span>
+        <span class="stat-pill">🔁 精密無縫平滑循環 (Seamless Loop)</span>
         <span class="stat-pill">🛡️ CC0 商業授權無憂</span>
       </div>
     </div>
 
+    <!-- 0. 候選試聽專區 (3 款 Lofi + 2 款浪漫夜晚) -->
+    <div class="candidate-banner">
+      <h2>✨ 新版候選試聽室：慢節奏 Lofi ＆ 浪漫夜晚（待挑選評審）</h2>
+      <p>專為解決前一版音軌穿插過渡感所客製生成。嚴格依循「舒眠聲音檔案產生準則」：60-66 BPM 緩慢心律節奏、柔和溫暖配器（Rhodes 電鋼琴、尼龍吉他、低通濾波 Pad）、零突兀重擊鼓點與無不和諧跳躍。音軌頭尾經過「音律對稱解析＋等能量正弦交叉平滑銜接」，在播放器點擊 🔁 循環即可測試真實連續循環效果，請檢查挑選可用之曲目！</p>
+    </div>
+
+    <div class="section-title">🎧 慢節奏 Lofi 舒眠候選音軌 (3 款)</div>
+    <div class="track-grid">
+      <!-- 候選 1: 慢島沉睡 -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon">🏝️</div>
+          <div class="track-titles">
+            <h3>慢節奏 Lofi ①：慢島沉睡 <span class="spec-tag candidate">Lofi 候選 1 • 2分33秒 • 2.9 MB</span></h3>
+            <p>經典復古 Rhodes 暖色電鋼琴 4 和弦反覆循環，微弱黑膠唱片溫暖底噪與輕柔低通濾波，步調平穩安神。</p>
+          </div>
+        </div>
+        <div class="audio-player-wrapper">
+          <audio id="audio-prev-lofi-1" controls loop>
+            <source src="audio/preview_lofi_01.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="action-links">
+          <button class="btn-loop active" onclick="toggleLoop('audio-prev-lofi-1', this)">🔁 循環中</button>
+          <a href="audio/preview_lofi_01.mp3" download="preview_lofi_01_slow_island.mp3" class="btn-dl">⬇ 下載 (2.9MB)</a>
+        </div>
+      </div>
+
+      <!-- 候選 2: 月光微風 -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon">🌙</div>
+          <div class="track-titles">
+            <h3>慢節奏 Lofi ②：月光微風 <span class="spec-tag candidate">Lofi 候選 2 • 2分55秒 • 3.3 MB</span></h3>
+            <p>指彈尼龍吉他與輕柔平台鋼琴交織，搭配遠處柔和氛圍 Pad，極致舒緩安靜，零尖銳敲擊。</p>
+          </div>
+        </div>
+        <div class="audio-player-wrapper">
+          <audio id="audio-prev-lofi-2" controls loop>
+            <source src="audio/preview_lofi_02.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="action-links">
+          <button class="btn-loop active" onclick="toggleLoop('audio-prev-lofi-2', this)">🔁 循環中</button>
+          <a href="audio/preview_lofi_02.mp3" download="preview_lofi_02_moonlit_breeze.mp3" class="btn-dl">⬇ 下載 (3.3MB)</a>
+        </div>
+      </div>
+
+      <!-- 候選 3: 星空暖茶 -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon">🍵</div>
+          <div class="track-titles">
+            <h3>慢節奏 Lofi ③：星空暖茶 <span class="spec-tag candidate">Lofi 候選 3 • 2分57秒 • 3.4 MB</span></h3>
+            <p>極簡環境 Lofi，深沉平緩的 Rhodes 和弦與柔和低頻脈動，無鼓點純放鬆，消除一切突兀重音。</p>
+          </div>
+        </div>
+        <div class="audio-player-wrapper">
+          <audio id="audio-prev-lofi-3" controls loop>
+            <source src="audio/preview_lofi_03.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="action-links">
+          <button class="btn-loop active" onclick="toggleLoop('audio-prev-lofi-3', this)">🔁 循環中</button>
+          <a href="audio/preview_lofi_03.mp3" download="preview_lofi_03_midnight_tea.mp3" class="btn-dl">⬇ 下載 (3.4MB)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">🍷 浪漫夜晚舒眠候選音軌 (2 款)</div>
+    <div class="track-grid">
+      <!-- 候選 4: 浪漫夜晚 燭光絮語 -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon">🕯️</div>
+          <div class="track-titles">
+            <h3>浪漫夜晚 ①：燭光絮語 <span class="spec-tag romantic">浪漫 候選 1 • 2分55秒 • 3.4 MB</span></h3>
+            <p>溫暖親暱的夜間浪漫抒情曲，柔美鋼琴伴隨微風弦樂 Pad，如燭光搖曳般的放鬆舒眠情調。</p>
+          </div>
+        </div>
+        <div class="audio-player-wrapper">
+          <audio id="audio-prev-romantic-1" controls loop>
+            <source src="audio/preview_romantic_01.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="action-links">
+          <button class="btn-loop active" onclick="toggleLoop('audio-prev-romantic-1', this)">🔁 循環中</button>
+          <a href="audio/preview_romantic_01.mp3" download="preview_romantic_01_candlelight.mp3" class="btn-dl">⬇ 下載 (3.4MB)</a>
+        </div>
+      </div>
+
+      <!-- 候選 5: 浪漫夜晚 星海沉醉 -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon">🌌</div>
+          <div class="track-titles">
+            <h3>浪漫夜晚 ②：星海沉醉 <span class="spec-tag romantic">浪漫 候選 2 • 2分46秒 • 3.2 MB</span></h3>
+            <p>絲絨般圓潤的電鋼琴與低音提琴慢步調，星空陽台般的深邃夜色氛圍，優雅浪漫且易於入眠。</p>
+          </div>
+        </div>
+        <div class="audio-player-wrapper">
+          <audio id="audio-prev-romantic-2" controls loop>
+            <source src="audio/preview_romantic_02.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="action-links">
+          <button class="btn-loop active" onclick="toggleLoop('audio-prev-romantic-2', this)">🔁 循環中</button>
+          <a href="audio/preview_romantic_02.mp3" download="preview_romantic_02_starry_serenade.mp3" class="btn-dl">⬇ 下載 (3.2MB)</a>
+        </div>
+      </div>
+    </div>
+
     <!-- 1. 自然氣象之聲 -->
-    <div class="section-title">🌧️ 自然大氣音效 (Nature Sounds)</div>
+    <div class="section-title">🌧️ 現有正式收錄音效庫 (Current Library)</div>
     <div class="track-grid">
       <!-- 舒眠雨聲 -->
       <div class="track-card">
         <div class="track-header">
           <div class="track-icon">🌧️</div>
           <div class="track-titles">
-            <h3>舒眠雨聲 <span class="spec-tag">48.3s • 755 KB</span></h3>
-            <p>純淨自然夏日微雨落地聲，清透放鬆，真正零中斷無縫循環。</p>
+            <h3>舒眠雨聲 <span class="spec-tag">16.0s • 188 KB</span></h3>
+            <p>純淨自然夏日微雨落地聲，清透放鬆，零合成雜音與電音。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-rain" controls loop>
-            <source src="audio/sound_rain.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_rain.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-rain', this)">🔁 循環中</button>
-          <a href="audio/sound_rain.mp3" download="sound_rain.mp3" class="btn-dl">⬇ 下載 (755KB)</a>
+          <a href="audio/sound_rain.mp3" download="sound_rain.mp3" class="btn-dl">⬇ 下載 (188KB)</a>
         </div>
       </div>
 
@@ -480,18 +473,18 @@
         <div class="track-header">
           <div class="track-icon">⛈️</div>
           <div class="track-titles">
-            <h3>低沉遠雷 <span class="spec-tag">40.5s • 633 KB</span></h3>
-            <p>震撼雷聲自然衰減後融入純淨細雨，完整大氣敘事，徹底消除斷點重啟。</p>
+            <h3>低沉遠雷 <span class="spec-tag">20.3s • 238 KB</span></h3>
+            <p>遠處平穩低沉的天然雷鳴回音伴隨雨聲，沉穩舒緩無驚擾。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-thunder" controls loop>
-            <source src="audio/sound_thunder.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_thunder.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-thunder', this)">🔁 循環中</button>
-          <a href="audio/sound_thunder.mp3" download="sound_thunder.mp3" class="btn-dl">⬇ 下載 (633KB)</a>
+          <a href="audio/sound_thunder.mp3" download="sound_thunder.mp3" class="btn-dl">⬇ 下載 (238KB)</a>
         </div>
       </div>
 
@@ -500,18 +493,18 @@
         <div class="track-header">
           <div class="track-icon">🌊</div>
           <div class="track-titles">
-            <h3>夜間海浪 <span class="spec-tag">44.0s • 688 KB</span></h3>
-            <p>純淨黑夜海浪拍打沙灘與浪花碎散的潮汐聲，浪潮波谷自然呼吸循環。</p>
+            <h3>夜間海浪 <span class="spec-tag">18.0s • 282 KB</span></h3>
+            <p>純淨黑夜海浪拍打沙灘與浪花碎散的潮汐聲，零任何樂器配樂。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-ocean" controls loop>
-            <source src="audio/sound_ocean.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_ocean.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-ocean', this)">🔁 循環中</button>
-          <a href="audio/sound_ocean.mp3" download="sound_ocean.mp3" class="btn-dl">⬇ 下載 (688KB)</a>
+          <a href="audio/sound_ocean.mp3" download="sound_ocean.mp3" class="btn-dl">⬇ 下載 (282KB)</a>
         </div>
       </div>
 
@@ -520,18 +513,18 @@
         <div class="track-header">
           <div class="track-icon">🌲</div>
           <div class="track-titles">
-            <h3>森林鳥鳴 <span class="spec-tag">43.6s • 681 KB</span></h3>
-            <p>清晨微風吹拂樹梢與天然林間清脆鳥語，大自然環繞身歷其境。</p>
+            <h3>森林鳥鳴 <span class="spec-tag">18.0s • 211 KB</span></h3>
+            <p>清晨微風吹拂樹梢與天然林間清脆鳥語，彷彿置身自然森林。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-forest" controls loop>
-            <source src="audio/sound_forest.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_forest.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-forest', this)">🔁 循環中</button>
-          <a href="audio/sound_forest.mp3" download="sound_forest.mp3" class="btn-dl">⬇ 下載 (681KB)</a>
+          <a href="audio/sound_forest.mp3" download="sound_forest.mp3" class="btn-dl">⬇ 下載 (211KB)</a>
         </div>
       </div>
 
@@ -540,18 +533,18 @@
         <div class="track-header">
           <div class="track-icon">💧</div>
           <div class="track-titles">
-            <h3>清澈溪流 <span class="spec-tag">40.1s • 626 KB</span></h3>
+            <h3>清澈溪流 <span class="spec-tag">16.0s • 188 KB</span></h3>
             <p>山澗石間潺潺流水，水流清亮平和，洗去日間疲憊煩惱。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-stream" controls loop>
-            <source src="audio/sound_stream.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_stream.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-stream', this)">🔁 循環中</button>
-          <a href="audio/sound_stream.mp3" download="sound_stream.mp3" class="btn-dl">⬇ 下載 (626KB)</a>
+          <a href="audio/sound_stream.mp3" download="sound_stream.mp3" class="btn-dl">⬇ 下載 (188KB)</a>
         </div>
       </div>
     </div>
@@ -564,18 +557,18 @@
         <div class="track-header">
           <div class="track-icon">🔥</div>
           <div class="track-titles">
-            <h3>柴火劈啪 <span class="spec-tag">22.5s • 352 KB</span></h3>
+            <h3>柴火劈啪 <span class="spec-tag">16.0s • 188 KB</span></h3>
             <p>溫暖冬夜壁爐柴火燃燒、木質自然劈啪爆裂的安心舒適聲音。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-campfire" controls loop>
-            <source src="audio/sound_campfire.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_campfire.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-campfire', this)">🔁 循環中</button>
-          <a href="audio/sound_campfire.mp3" download="sound_campfire.mp3" class="btn-dl">⬇ 下載 (352KB)</a>
+          <a href="audio/sound_campfire.mp3" download="sound_campfire.mp3" class="btn-dl">⬇ 下載 (188KB)</a>
         </div>
       </div>
 
@@ -584,18 +577,18 @@
         <div class="track-header">
           <div class="track-icon">🦗</div>
           <div class="track-titles">
-            <h3>寧靜夜蟲 <span class="spec-tag">37.9s • 591 KB</span></h3>
-            <p>夏夜田野間蟋蟀低鳴與微風輕撫，能量均衡平穩，營造極致靜謐催眠感。</p>
+            <h3>寧靜夜蟲 <span class="spec-tag">15.0s • 147 KB</span></h3>
+            <p>夏夜田野間蟋蟀低鳴與微風輕撫，營造極致靜謐的催眠氛圍。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-crickets" controls loop>
-            <source src="audio/sound_crickets.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_crickets.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-crickets', this)">🔁 循環中</button>
-          <a href="audio/sound_crickets.mp3" download="sound_crickets.mp3" class="btn-dl">⬇ 下載 (591KB)</a>
+          <a href="audio/sound_crickets.mp3" download="sound_crickets.mp3" class="btn-dl">⬇ 下載 (147KB)</a>
         </div>
       </div>
 
@@ -604,18 +597,18 @@
         <div class="track-header">
           <div class="track-icon">🕰️</div>
           <div class="track-titles">
-            <h3>復古掛鐘 <span class="spec-tag">20.5s • 321 KB</span></h3>
-            <p>機械鐘擺精準勻速的滴答 (Tic-Tac) 節奏，完美對齊週期無漏拍。</p>
+            <h3>復古掛鐘 <span class="spec-tag">14.0s • 137 KB</span></h3>
+            <p>機械鐘擺精準勻速的滴答 (Tic-Tac) 節奏，幫助大腦放鬆專注。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-clock" controls loop>
-            <source src="audio/sound_clock.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_clock.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-clock', this)">🔁 循環中</button>
-          <a href="audio/sound_clock.mp3" download="sound_clock.mp3" class="btn-dl">⬇ 下載 (321KB)</a>
+          <a href="audio/sound_clock.mp3" download="sound_clock.mp3" class="btn-dl">⬇ 下載 (137KB)</a>
         </div>
       </div>
 
@@ -624,18 +617,18 @@
         <div class="track-header">
           <div class="track-icon">🎐</div>
           <div class="track-titles">
-            <h3>微風風鈴 <span class="spec-tag">36.0s • 563 KB</span></h3>
-            <p>純淨金屬微風鈴輕響，空靈回音自然悠長散去，淨化心靈冥想助眠。</p>
+            <h3>微風風鈴 <span class="spec-tag">18.0s • 211 KB</span></h3>
+            <p>純淨金屬微風鈴輕響，空靈回音悠長，淨化心靈冥想助眠。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-chimes" controls loop>
-            <source src="audio/sound_chimes.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_chimes.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-chimes', this)">🔁 循環中</button>
-          <a href="audio/sound_chimes.mp3" download="sound_chimes.mp3" class="btn-dl">⬇ 下載 (563KB)</a>
+          <a href="audio/sound_chimes.mp3" download="sound_chimes.mp3" class="btn-dl">⬇ 下載 (211KB)</a>
         </div>
       </div>
 
@@ -644,18 +637,18 @@
         <div class="track-header">
           <div class="track-icon">💨</div>
           <div class="track-titles">
-            <h3>電風扇 <span class="spec-tag">30.9s • 482 KB</span></h3>
-            <p>柔和平順的平穩低頻氣流運轉聲，連續無相位差，遮蔽外界噪音首選。</p>
+            <h3>電風扇 <span class="spec-tag">12.0s • 118 KB</span></h3>
+            <p>柔和平順的平穩低頻氣流運轉聲，經典遮蔽外界突發噪音的最佳選擇。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-fan" controls loop>
-            <source src="audio/sound_fan.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_fan.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-fan', this)">🔁 循環中</button>
-          <a href="audio/sound_fan.mp3" download="sound_fan.mp3" class="btn-dl">⬇ 下載 (482KB)</a>
+          <a href="audio/sound_fan.mp3" download="sound_fan.mp3" class="btn-dl">⬇ 下載 (118KB)</a>
         </div>
       </div>
 
@@ -664,18 +657,18 @@
         <div class="track-header">
           <div class="track-icon">🧘</div>
           <div class="track-titles">
-            <h3>靜心頌缽 <span class="spec-tag pro">PRO • 37.0s • 579 KB</span></h3>
-            <p>西藏純銅頌缽多重諧波共振與純淨長泛音，環繞冥想舒緩神經。</p>
+            <h3>靜心頌缽 <span class="spec-tag pro">PRO • 18.0s • 211 KB</span></h3>
+            <p>真實西藏純銅頌缽敲擊長泛音與共振，無任何背景混音干擾。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-tibetan" controls loop>
-            <source src="audio/sound_tibetan_bowl.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_tibetan_bowl.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-tibetan', this)">🔁 循環中</button>
-          <a href="audio/sound_tibetan_bowl.mp3" download="sound_tibetan_bowl.mp3" class="btn-dl">⬇ 下載 (579KB)</a>
+          <a href="audio/sound_tibetan_bowl.mp3" download="sound_tibetan_bowl.mp3" class="btn-dl">⬇ 下載 (211KB)</a>
         </div>
       </div>
     </div>
@@ -688,18 +681,18 @@
         <div class="track-header">
           <div class="track-icon">🐱</div>
           <div class="track-titles">
-            <h3>貓咪撒嬌呼嚕聲 <span class="spec-tag pro">PRO • 20.7s • 324 KB</span></h3>
-            <p>近距離親人撒嬌呼嚕與胸腔共鳴，大幅延長循環，純淨真實 ASMR。</p>
+            <h3>貓咪撒嬌呼嚕聲 <span class="spec-tag pro">PRO • 8.4s • 99 KB</span></h3>
+            <p>近距離親人撒嬌呼嚕與胸腔共鳴，純淨真實 ASMR，完全無音樂。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-cat-gentle" controls loop>
-            <source src="audio/sound_cat_purr_gentle.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_cat_purr_gentle.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-cat-gentle', this)">🔁 循環中</button>
-          <a href="audio/sound_cat_purr_gentle.mp3" download="sound_cat_purr_gentle.mp3" class="btn-dl">⬇ 下載 (324KB)</a>
+          <a href="audio/sound_cat_purr_gentle.mp3" download="sound_cat_purr_gentle.mp3" class="btn-dl">⬇ 下載 (99KB)</a>
         </div>
       </div>
 
@@ -708,18 +701,18 @@
         <div class="track-header">
           <div class="track-icon">💤</div>
           <div class="track-titles">
-            <h3>貓咪沈睡聲 <span class="spec-tag pro">PRO • 20.0s • 313 KB</span></h3>
-            <p>熟睡貓咪緩慢深層的低頻呼吸呼嚕震動，呼吸韻律自然接續，安全感十足。</p>
+            <h3>貓咪沈睡聲 <span class="spec-tag pro">PRO • 15.0s • 176 KB</span></h3>
+            <p>熟睡貓咪緩慢深層的低頻呼吸呼嚕震動，營造極致安全感與放鬆感。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-cat-sleep" controls loop>
-            <source src="audio/sound_cat_purr.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_cat_purr.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-cat-sleep', this)">🔁 循環中</button>
-          <a href="audio/sound_cat_purr.mp3" download="sound_cat_purr.mp3" class="btn-dl">⬇ 下載 (313KB)</a>
+          <a href="audio/sound_cat_purr.mp3" download="sound_cat_purr.mp3" class="btn-dl">⬇ 下載 (176KB)</a>
         </div>
       </div>
 
@@ -728,18 +721,18 @@
         <div class="track-header">
           <div class="track-icon">🎧</div>
           <div class="track-titles">
-            <h3>慢節奏 Lo-Fi 舒眠 <span class="spec-tag pro">PRO • 34.5s • 540 KB</span></h3>
-            <p>輕柔溫暖的 Rhodes 電鋼琴無縫循環，樂句能量完全平衡，夜讀入眠首選。</p>
+            <h3>慢節奏 Lo-Fi 舒眠 <span class="spec-tag pro">PRO • 26.0s • 407 KB</span></h3>
+            <p>輕柔溫暖的 Rhodes 電鋼琴無縫循環，專為夜讀與沉靜入眠打造。</p>
           </div>
         </div>
         <div class="audio-player-wrapper">
           <audio id="audio-lofi" controls loop>
-            <source src="audio/sound_lofi.mp3?v=1.0.11" type="audio/mpeg">
+            <source src="audio/sound_lofi.mp3" type="audio/mpeg">
           </audio>
         </div>
         <div class="action-links">
           <button class="btn-loop active" onclick="toggleLoop('audio-lofi', this)">🔁 循環中</button>
-          <a href="audio/sound_lofi.mp3" download="sound_lofi.mp3" class="btn-dl">⬇ 下載 (540KB)</a>
+          <a href="audio/sound_lofi.mp3" download="sound_lofi.mp3" class="btn-dl">⬇ 下載 (407KB)</a>
         </div>
       </div>
     </div>
@@ -764,54 +757,5 @@
       }
     }
   </script>
-
-  <script>
-    const CORRECT_PIN = "8888";
-
-    function checkAuth() {
-      if (sessionStorage.getItem('goodsound_preview_auth') === CORRECT_PIN) {
-        unlockContent();
-      }
-    }
-
-    function verifyPin() {
-      const input = document.getElementById('pin-input');
-      const err = document.getElementById('pin-error');
-      if (input.value === CORRECT_PIN) {
-        sessionStorage.setItem('goodsound_preview_auth', CORRECT_PIN);
-        unlockContent();
-      } else {
-        err.style.display = 'block';
-        input.classList.add('shake');
-        setTimeout(() => input.classList.remove('shake'), 450);
-        input.value = '';
-        input.focus();
-      }
-    }
-
-    function unlockContent() {
-      const overlay = document.getElementById('pin-overlay');
-      const content = document.getElementById('protected-content');
-      if (overlay) overlay.style.display = 'none';
-      if (content) {
-        content.style.display = 'block';
-        content.style.animation = 'fadeIn 0.4s ease forwards';
-      }
-    }
-
-    const pinInput = document.getElementById('pin-input');
-    if (pinInput) {
-      pinInput.addEventListener('keyup', function(e) {
-        if (e.key === 'Enter') {
-          verifyPin();
-        } else if (this.value.length === 4) {
-          verifyPin();
-        }
-      });
-    }
-
-    checkAuth();
-  </script>
-
 </body>
 </html>
